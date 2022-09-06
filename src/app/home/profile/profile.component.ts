@@ -9,11 +9,11 @@ import {Component, Input, OnChanges, OnInit} from '@angular/core';
 export class ProfileComponent implements OnInit, OnChanges  {
   
 
-  public titleEnglish: string = "TITLE";
-  public subtitleEnglish: string = "SUB TITLE";
+  public titleEnglish: string = "LAURA MELLO";
+  public subtitleEnglish: string = "SOFTWARE ENGINEER";
   
-  public titleEspanol: string = 'TITULO';  
-  public subtitleEspanol: string = 'SUB TITULO';
+  public titlePortuguese: string = 'LAURA MELLO';  
+  public subtitlePortuguese: string = 'ENGENHEIRA DE SOFTWARE';
 
 
   public title = this.titleEnglish;
@@ -23,16 +23,16 @@ export class ProfileComponent implements OnInit, OnChanges  {
   // You can use a HTML tags in 'data'
   public profileEnglish: any =
     {
-      title: 'SOME DESCRIPCTION:', data: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-      + '<BR> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>',
+      title: 'ABOUT ME:', data: '<p> I\'m 32 years old, I have two AWS certifications, currently studying a Bachelor\'s degree in Software Engineering at UNINTER and I\'ve been working at Itaú Unibanco for 3 years. I deal daily with complex systems that serve millions of customers nationwide, using technologies such as Spring, Kafka, ECS, EKS, Elasticache, DynamoDB and RDS Aurora.'
+      + '<BR> I like music, learning about technology, cooking and cycling in my spare time. </p>',
       contact: 'CONTACT', sp: 'SOCIAL PROFILES'
     };
   
-    public profileEspanol: any =
+    public profilePortuguese: any =
       {
-        title: 'ALGUNA DESCRIPCIÓN:', data: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-        + '<BR> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>',
-        contact: 'CONTACTO', sp: 'PERFILES'
+        title: 'SOBRE MIM:', data: '<p> Tenho 32 anos, possuo duas certificações AWS, estudo Bacharelado em Engenharia de Software na UNINTER e trabalho no Itaú Unibanco há 3 anos. Lido diariamente com sistemas complexos que atendem milhões de clientes em território nacional, utilizando tecnologias como Spring, Kafka, ECS, EKS, Elasticache, DynamoDB e RDS Aurora.'
+        + '<BR> Gosto de música, aprender sobre tecnologia, cozinhar e pedalar nas horas vagas. </p>',
+        contact: 'CONTATOS', sp: 'REDES SOCIAIS'
       };
   
   public profile = this.profileEnglish;
@@ -48,9 +48,9 @@ export class ProfileComponent implements OnInit, OnChanges  {
       this.subtitle = this.subtitleEnglish;
       this.profile = this.profileEnglish;
     } else {
-      this.title = this.titleEspanol;
-      this.subtitle = this.subtitleEspanol;
-      this.profile = this.profileEspanol;
+      this.title = this.titlePortuguese;
+      this.subtitle = this.subtitlePortuguese;
+      this.profile = this.profilePortuguese;
     }
   }
 

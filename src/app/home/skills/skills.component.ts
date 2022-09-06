@@ -13,116 +13,106 @@ export class SkillsComponent implements OnInit, OnChanges {
  
   // TITLE 
   public headEnglish: any = { title: 'MY SKILLS', subtitle: 'SKILLS AND TOOLS' };
-  public headEspanol: any = { title: 'HABILIDADES', subtitle: 'HABILIDADES Y HERRAMIENTAS' };
+  public headPortuguese: any = { title: 'HABILIDADES', subtitle: 'HABILIDADES E FERRAMENTAS' };
   public head: any = this.headEnglish;
 
 
   // ENGLISH
   public skill_1: any = [
     [{
-      title: 'SUB SKILL 1',
-      progress: 95
-    }],
-    [{
-      title: 'SUB SKILL 2',
-      progress: 90
-    }],
-    [{
-      title: 'SUB SKILL 3',
+      title: 'AWS',
       progress: 85
+    }],
+    [{
+      title: 'CONTAINERS',
+      progress: 70
+    }],
+    [{
+      title: 'OBSERVABILITY',
+      progress: 75
     }]
   ];
 
   public skill_2: any = [
-
     [{
-      title: 'SUB SKILL 1',
+      title: 'JAVA',
       progress: 90
     }],
     [{
-      title: 'SUB SKILL 2',
-      progress: 95
+      title: 'SPRING FRAMEWORK',
+      progress: 75
     }]
   ];
 
   public skill_3: any = [
-
     [{
-      title: 'SUB SKILL 1',
+      title: 'SCRUM',
       progress: 90
     }],
     [{
-      title: 'SUB SKILL 2',
-      progress: 95
+      title: 'KANBAN',
+      progress: 50
     }]
   ];
   
   public skillEnglish: any = [
-    { title: 'skill 1', info: this.skill_1 },
-    { title: 'skill 2', info: this.skill_2 },
-    { title: 'skill 3', info: this.skill_3 },
+    { title: 'CLOUD COMPUTING', info: this.skill_1 },
+    { title: 'OBJECT-ORIENTED PROGRAMMING', info: this.skill_2 },
+    { title: 'AGILE', info: this.skill_3 },
   ];
   // END ENGLISH
 
 
-  // ESPANOL
-  public habilidad_1: any = [
+  // PORTUGUESE
+  public habilidade_1: any = [
 
     [{
-      title : 'HABILIDAD 1',
-       progress : 95
-      }],
-      [{
-       title : 'HABILIDAD 2',
-        progress : 90
-      }]
-  ];
-
-  public habilidad_2: any = [
-
+      title: 'AWS',
+      progress: 85
+    }],
     [{
-      title : 'HABILIDAD 1',
-       progress : 95
-      }],
-      [{
-       title : 'HABILIDAD 2',
-        progress : 90
-      }],
-      [{
-       title : 'HABILIDAD 3',
-        progress : 96
-      }]
-  ];
-
-  public habilidad_3: any = [
-
+      title: 'CONTAINERS',
+      progress: 70
+    }],
     [{
-      title : 'HABILIDAD 1',
-       progress : 95
-      }],
-      [{
-       title : 'HABILIDAD 2',
-        progress : 90
-      }],
-      [{
-       title : 'HABILIDAD 3',
-        progress : 96
-      }]
+      title: 'OBSERVABILITY',
+      progress: 75
+    }]
+  ];
+
+  public habilidade_2: any = [
+    [{
+      title: 'JAVA',
+      progress: 90
+    }],
+    [{
+      title: 'SPRING FRAMEWORK',
+      progress: 75
+    }]
+  ];
+
+  public habilidade_3: any = [
+    [{
+      title: 'SCRUM',
+      progress: 90
+    }],
+    [{
+      title: 'KANBAN',
+      progress: 50
+    }]
   ];
 
 
-  public skillEspanol: any = [
-    { title: 'habilidad 1', info: this.habilidad_1 },
-    { title: 'habilidad 2', info: this.habilidad_2 },
-    { title: 'habilidad 3', info: this.habilidad_3 },
+  public skillPortuguese: any = [
+    { title: 'CLOUD COMPUTING', info: this.habilidade_1 },
+    { title: 'PROGRAMAÇÃO ORIENTADA A OBJETOS', info: this.habilidade_2 },
+    { title: 'METODOLOGIAS ÁGEIS', info: this.habilidade_3 },
   ];
-  // FIN ESPANOL 
+  // FIM PORTUGUESE 
 
 
   // DEFAULT 
   public skills: any = this.skillEnglish;
-
-
 
 
   ngOnInit() {
@@ -133,8 +123,8 @@ export class SkillsComponent implements OnInit, OnChanges {
       this.skills = this.skillEnglish;
       this.head = this.headEnglish;
     } else {
-      this.skills = this.skillEspanol;
-      this.head = this.headEspanol;
+      this.skills = this.skillPortuguese;
+      this.head = this.headPortuguese;
     }
   }
 

@@ -11,8 +11,8 @@ export class AwardsComponent implements OnInit, OnChanges {
 
   @Input() English: any;
 
-  public headEnglish: any = { title: 'AWARDS', subtitle: 'PERSONAL ACHIEVEMENT & COURSES' };
-  public headEspanol: any = { title: 'LOGROS', subtitle: 'CURSOS Y LOGROS PERSONALES' };
+  public headEnglish: any = { title: 'CERTIFICATIONS', subtitle: 'MY CERTIFICATES' };
+  public headPortuguese: any = { title: 'CERTIFICAÇÕES', subtitle: 'MEUS CERTIFICADOS' };
   public head: any = this.headEnglish;
 
   
@@ -21,25 +21,25 @@ export class AwardsComponent implements OnInit, OnChanges {
   public awardsEnglish: any = [
 
     {
-      title: 'COURSE',
-      name: 'COURSE NAME - 2022'
+      title: 'AWS',
+      name: 'SOLUTIONS ARCHITECT - 2022'
     },
     {
-      title: 'ACHIEVEMENT',
-      name: 'ACHIEVEMENT NAME - 2021'
+      title: 'AWS',
+      name: 'CLOUD PRACTITIONER - 2021'
     }
   ];
 
 
-  public awardsEspanol: any = [
+  public awardsPortuguese: any = [
 
     {
-      title: 'CURSO',
-      name: 'NOMBRE DE CURSO - 2021'
+      title: 'AWS',
+      name: 'SOLUTIONS ARCHITECT - 2022'
     },
     {
-      title: 'PREMIO',
-      name: 'NOMBRE DE PREMIO - 2021'
+      title: 'AWS',
+      name: 'CLOUD PRACTITIONER - 2021'
     }
   ];
 
@@ -56,8 +56,8 @@ export class AwardsComponent implements OnInit, OnChanges {
       this.awards = this.awardsEnglish;
       this.head = this.headEnglish;
     } else {
-      this.awards = this.awardsEspanol;
-      this.head = this.headEspanol;
+      this.awards = this.awardsPortuguese;
+      this.head = this.headPortuguese;
     }
   }
 

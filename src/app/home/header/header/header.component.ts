@@ -16,12 +16,12 @@ export class HeaderComponent implements OnInit {
     awards: 'AWARDS'
   };
 
-  public menuEspanol: any = {
-    home: 'INICIO',
-    profile: 'PERFIL',
+  public menuPortuguese: any = {
+    home: 'INÍCIO',
+    profile: 'SOBRE MIM',
     skills: 'HABILIDADES',
-    resume: 'EXPERIENCIA',
-    awards: 'LOGROS'
+    resume: 'EXPERIÊNCIAS',
+    awards: 'CERTIFICADOS'
   };
   public menu: any = this.menuEnglish;
 
@@ -40,7 +40,7 @@ export class HeaderComponent implements OnInit {
     this.English = !this.English;
     this.lenguage.emit(this.English);
     if (!this.English) {
-      this.menu = this.menuEspanol;
+      this.menu = this.menuPortuguese;
     } else {
       this.menu = this.menuEnglish;
     }
