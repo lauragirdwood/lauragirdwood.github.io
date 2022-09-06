@@ -3,14 +3,6 @@ A simple template to write your resume.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
 
-## Demo
-
-<img src="src/assets/images/preview/preview_1.jpg" 
-				alt="Preview" />   
-
-<img src="src/assets/images/preview/preview_2.jpg" 
-				alt="Preview" />   
-
 ## Install
 Run `npm install`
 
